@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>نوشته شه رییس کیه؟</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; font-family: sans-serif; }
+
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #f0f0f0;
+    padding: 20px;
+  }
+
+  .container {
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    max-width: 500px;
+    width: 100%;
+    padding: 20px;
+    text-align: center;
+  }
+
+  h1 {
+    margin-bottom: 20px;
+    font-size: 1.8rem;
+    color: #333;
+  }
+
+  button {
+    padding: 12px 20px;
+    margin: 10px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 8px;
+    background: #4CAF50;
+    color: #fff;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+
+  button:hover {
+    background: #45a049;
+  }
+
+  @media (max-width: 600px) {
+    h1 { font-size: 1.4rem; }
+    button { font-size: 0.9rem; padding: 10px 16px; }
+  }
+</style>
+</head>
+<body>
+
+<div class="container">
+  <h1>نوشته شه رییس کیه؟</h1>
+  <button onclick="answer('نازنین')">نازنین</button>
+  <button onclick="answer('هیچکس')">هیچکس</button>
+  <button onclick="answer('جفتمون')">جفتمون</button>
+  <button onclick="answer('ممد')">ممد</button>
+</div>
+
+<script>
+  function answer(choice) {
+    alert('شما گزینه‌ی "' + choice + '" را انتخاب کردید!');
+  }
+</script>
+
+</body>
+    </html>
